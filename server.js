@@ -8,6 +8,7 @@ mongoose.connect(
     "mongodb://localhost:27017/nodeapi",
     { useNewUrlParser: true}
 );
+require('./src/models/Product');
 
 //Primeira rota
 app.get("/", (req, res) => {
