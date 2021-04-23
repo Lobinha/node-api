@@ -15,8 +15,8 @@ const ProductSchema = new mongoose.Schema({
     },
     createdAt: {
         type: Date,
-        required: Date.now
-    }
+        required: Date.now,
+    },
 });
 
 mongoose.model("Product", ProductSchema);
